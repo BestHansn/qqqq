@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            width:1600px;
+            height:4500px;
+
+        }
+        .header1{
+            width:1600px;
+            height:34px;
+            background: rgb(238,238,238);
+            overflow: hidden;
+        }
+        .header1-item{
+            width:90px;
+            height:30px;
+            margin-left: -30px;
+            margin-top: -5px;
+            float: left;
+            overflow: hidden;
+        }
+        .header2{
+            width:1600px;
+            height:130px;
+            overflow: hidden;
+        }
+        .header3{
+            width:1600px;
+            height:45px;
+            overflow: hidden;
+        }
+        .header3-item{
+            width:90px;
+            height:45px;
+            float: left;
+        }
+        .center{
+            background: rgb(242,242,242);
+            overflow: hidden;
+        }
+        .center-item1{
+            width:6400px;
+            inner:470px;
+            border-top: 2px solid rgb(0,139,221);
+            background-position-x: -200px;
+            position: relative;
+            transition: all 1s;
+            left: 0px;
+            overflow: hidden;
+        }
+        .center-item-1{
+            backgronud: url("../resource/img/banner.jpg");
+            display: block;
+        }
+        .center-item-2{
+            background: url("../resource/img/888.png");
+        }
+        .center-item-3{
+            background: url("../resource/img/999.png");
+        }
+        .center-itemfirst{
+            background: url("../resource/img/banner.jpg");
+        }
+        .center-itema{
+            width: 1600px;
+            height: 470px;
+            float: left;
+        }
+        .center-item2{
+            width:1600px;
+            height:185px;
+            overflow: hidden;
+        }
+        .center-item-p{
+            width:290px;
+            height:160px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .center-item3{
+            width:320px;
+            height:60px;
+            margin-left: 190px;
+            overflow: hidden;
+        }
+        .center-item4{
+            width:1180px;
+            height:370px;
+            margin-left: 190px;
+            overflow: hidden;
+            border-top: 2px solid rgb(0,139,221);
+        }
+        .center-item-t{
+            width:210px;
+            height:115px;
+            float: left;
+            border: 1px rgb(228,228,228) solid;
+            background: white;
+        }
+        .img{
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+        .center-item5{
+            width:700px;
+            height:60px;
+            margin-left: 190px;
+            overflow: hidden;
+        }
+        .center-item6{
+            width:1180px;
+            height:535px;
+            margin-left: 190px;
+            overflow: hidden;
+            border:1px rgb(228,228,228) solid;
+            border-top: 2px solid rgb(0,139,221);
+            background: white;
+        }
+        .center-item-a{
+            width: 275px;
+            height:260px;
+            float: left;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        .center-item7{
+            width:1180px;
+            height:120px;
+            margin-left: 190px;
+            margin-top: 30px;
+            background-image: url("../resource/img/footer3.jpg");
+        }
+        .center-item8{
+            width:700px;
+            height:60px;
+            margin-left: 190px;
+            overflow: hidden;
+        }
+        .center-item9{
+            width:1180px;
+            height:535px;
+            margin-left: 190px;
+            overflow: hidden;
+            border:1px rgb(228,228,228) solid;
+            border-top: 2px solid rgb(0,139,221);
+            background: white;
+        }
+        .center-item10{
+            width:1180px;
+            height:120px;
+            margin-left: 190px;
+            margin-top: 30px;
+            background-image: url("../resource/img/footer2.jpg");
+        }
+        .center-item11{
+            width:700px;
+            height:60px;
+            margin-left: 190px;
+            overflow: hidden;
+        }
+        .center-item12{
+            width:1180px;
+            height:535px;
+            margin-left: 190px;
+            overflow: hidden;
+            border:1px rgb(228,228,228) solid;
+            border-top: 2px solid rgb(0,139,221);
+            background: white;
+        }
+        .center-item13{
+            width:1180px;
+            height:120px;
+            margin-left: 190px;
+            margin-top: 30px;
+            background-image: url("../resource/img/footer1.jpg");
+        }
+        .center-item14{
+            width:700px;
+            height:60px;
+            margin-left: 190px;
+            overflow: hidden;
+        }
+        .center-item15{
+            width:1180px;
+            height:535px;
+            margin-left: 190px;
+            overflow: hidden;
+            border:1px rgb(228,228,228) solid;
+            border-top: 2px solid rgb(0,139,221);
+            background: white;
+        }
+        .center-item16{
+            width:1180px;
+            height:120px;
+            margin-left: 190px;
+            margin-top: 30px;
+            background-image: url("../resource/img/footer.jpg");
+        }
+        .center-item17{
+            width:1600px;
+            height:85px;
+            margin-top: 30px;
+            overflow: hidden;
+            background: rgb(226,226,226);
+        }
+        .item-pp{
+            width:60px;
+            height:60px;
+            margin-left: 90px;
+            margin-top: 20px;
+            float: left;
+        }
+        .item-tt{
+            width:100px;
+            height:60px;
+            margin-top: 12px;
+            float: left;
+        }
+        .footer{
+            width:1600px;
+            height:370px;
+
+        }
+        .footer1{
+            width: 1600px;
+            height:250px;
+            background: white;
+            overflow: hidden;
+        }
+        .footer-item1{
+            width:230px;
+            height:130px;
+            margin-left: 190px;
+            margin-top: 50px;
+            float: left;
+        }
+        .footer-item2{
+            width: 150px;
+            height:190px;
+            float: left;
+            margin-left: 40px;
+            margin-top: 30px;
+        }
+        .footer-item3{
+            width:100px;
+            height:190px;
+            float: left;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+        .item-cc{
+            color: rgb(102,102,102);
+            font-size: 15px;
+        }
+        .footer2{
+            width:1600px;
+            height:125px;
+            border-top:1px rgb(102,102,102) solid;
+        }
+        .footer2 p{
+            width: 1180px;
+            margin: 0 auto;
+            margin-top: 35px;
+            text-align: center;
+            color: #989998;
+            font-size: 14px;
+        }
+        .footer2 a{
+            display: block;
+            margin: 0 auto;
+            margin-top: 16px;
+            font-size: 14px;
+            color: #288DE1;
+            width: 1181px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .serach{
+            width:176px ;
+            height: 470px;
+            border:1px solid #cccccc;
+            position: absolute;
+            left:198px;
+            top:218px;
+            display: none;
+            background: black;
+            opacity: 0.6;
+        }
+        .serach-item:hover{
+            background: rgb(236,106,23);
+        }
+        .serach-item-a{
+            width:400px;
+            height:470px;
+            position: absolute;
+            left:175px;
+            top:1px;
+            background: url("../resource/img/CHS66666.png");
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="header">
+            <div class="header1">
+                <div class="header1-item" style="margin-left: 200px"><p style="font-size: 8px">所在城市：北京</p></div>
+                <div class="header1-item" style="margin-left: 700px"><p style="font-size: 8px">您好，</p></div>
+                <div class="header1-item" style="margin-left: -60px"><p style="font-size: 8px;color:orange">18855577420</p></div>
+                <div class="header1-item"style="margin-left: 20px"><p style="font-size: 8px">退出</p></div>
+                <div class="header1-item"><p style="font-size: 8px">我的订单</p></div>
+                <div class="header1-item"><p style="font-size: 8px">我的消息</p></div>
+                <div class="header1-item"><p style="font-size: 8px">我是商家</p></div>
+                <div class="header1-item"><P style="font-size: 8px">400-888-8820</P></div>
+            </div>
+            <div class="header2">
+                <div style="width: 140px;height: 80px;margin-left: 195px;margin-top: 20px;float: left">
+                    <img src="../resource/img/yihe.png">
+                </div>
+                <div style="width: 50px;height: 30px;margin-left: 230px;margin-top: 26px;background:rgb(0,139,221);float: left">商家</div>
+                <div style="width: 50px;height: 30px;margin-top: 26px;float: left">商品</div>
+                <div style="width: 450px;height: 30px;margin-top:56px;margin-left:565px;border: 3px solid rgb(0,139,221)">
+                    <div><p style="color: rgb(153,153,153);font-size: 10px">请输入商家名称或关键字进行筛选</p></div>
+                </div>
+                <div style="width: 50px;height: 35px;background:rgb(0,139,221);float: left;margin-left: 685px;margin-top: -36px">
+                    <img src="../resource/img/serach.png">
+                </div>
+                <div style="width: 90px;background: rgb(249,249,249);border: 1px rgb(211,211,211) solid;height: 35px;float:left;margin-left:1200px;margin-top: -45px ">
+                    <p style="margin-top: 5px;margin-left: 10px;">我的易和</p>
+                </div>
+                <div style="width: 75px;height: 35px;background: rgb(249,249,249);border: 1px rgb(211,211,211) solid;float:left;margin-left:1400px;margin-top: -45px">
+                    <p style="margin-top: 5px;margin-left: 10px">购物车</p>
+                </div>
+            </div>
+            <div class="header3">
+                <div style="width: 175px;height: 45px;background: rgb(0,139,221);margin-left:190px;float: left" class="header-itemq">
+                    <p style="color: white;font-size: 20px;margin-left: 40px;margin-top: 8px">行业分类</p>
+                    <div class="serach">
+                        <div class="serach-item" style="width: 175px;height: 50px;border:1px solid #cccccc;">
+                            <p style="color: white;font-size: 17px;margin-left: 30px">服装市场&nbsp&nbsp&nbsp&nbsp&nbsp;></p>
+                        </div>
+                        <div class="serach-item" style="width: 175px;height: 50px;border:1px solid #cccccc;">
+                            <p style="color: white;font-size: 17px;margin-left: 30px">建材市场&nbsp&nbsp&nbsp&nbsp&nbsp;></p>
+                        </div>
+                        <div class="serach-item" style="width: 175px;height: 50px;border:1px solid #cccccc;">
+                            <p style="color: white;font-size: 17px;margin-left: 30px">休闲娱乐&nbsp&nbsp&nbsp&nbsp&nbsp;></p>
+                        </div>
+                        <div class="serach-item" style="width: 175px;height: 50px;border:1px solid #cccccc;">
+                            <p style="color: white;font-size: 17px;margin-left: 30px">生活服务&nbsp&nbsp&nbsp&nbsp&nbsp;></p>
+                        </div>
+                        <div class="serach-item" style="width: 175px;height: 50px;border:1px solid #cccccc;">
+                            <p style="color: white;font-size: 17px;margin-left: 30px">3C市场&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;></p>
+                        </div>
+                        <div class="serach-item" style="width: 175px;height: 50px;border:1px solid #cccccc;">
+                            <p style="color: white;font-size: 17px;margin-left: 30px">丽人&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;></p>
+                        </div>
+                        <div class="serach-item" style="width: 175px;height: 50px;border:1px solid #cccccc;">
+                            <p style="color: white;font-size: 17px;margin-left: 30px">本地生活&nbsp&nbsp&nbsp&nbsp&nbsp;></p>
+                        </div>
+                        <div class="serach-item" style="width: 175px;height: 50px;border:1px solid #cccccc;">
+                            <p style="color: white;font-size: 17px;margin-left: 30px">购物&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;></p>
+                        </div>
+                        <div class="serach-item" style="width: 175px;height: 50px;border:1px solid #cccccc;">
+                            <p style="color: white;font-size: 17px;margin-left: 30px">电子数码&nbsp&nbsp&nbsp&nbsp&nbsp;></p>
+                        </div>
+                        <div class="serach-item-a">
+                        </div>
+                    </div>
+                </div>
+                <div class="header3-item" style="margin-left: 50px">
+                    <p>首页</p>
+                </div>
+                <div class="header3-item" style="margin-left: 50px">
+                    <p>精选品牌</p>
+                </div>
+                <div class="header3-item" style="margin-left: 50px">
+                    <p>今日特价</p>
+                </div>
+                <div class="header3-item" style="margin-left: 50px">
+                    <p>积分商城</p>
+                </div>
+                <div class="header3-item" style="margin-left: 50px">
+                    <p>加入易和</p>
+                </div>
+                <div class="header3-item" style="margin-left: 350px">
+                    <p>在线客服</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="center-item1">
+                <div class="center-item-1 center-itema"></div>
+                <div class="center-item-2 center-itema"></div>
+                <div class="center-item-3 center-itema"></div>
+                <div class="center-itemfirst center-itema"></div>
+            </div>
+
+
+            <div class="center-item2">
+                <div class="center-item-p" style="margin-left: 190px">
+                    <img src="../resource/img/red.png" >
+                </div>
+                <div class="center-item-p">
+                    <img src="../resource/img/fugu.png" >
+                </div>
+                <div class="center-item-p">
+                    <img src="../resource/img/mei.png" >
+                </div>
+                <div class="center-item-p">
+                    <img src="../resource/img/man.png" >
+                </div>
+            </div>
+            <div>
+                <div class="center-item3">
+                <p style="float: left;color: orangered;font-size: 30px;margin-top: 5px">精选</p>
+                <p style="float: left;font-size: 30px;margin-top: 5px">品牌</p>
+                <p style="float: left;margin-left: 20px">Brand selection</p>
+                </div>
+                <div class="center-item4">
+                    <div style="width: 320px;height:350px;margin-left: 10px;margin-top: 10px;float: left">
+                        <img src="../resource/img/x1.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x2.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x3.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x4.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x5.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x6.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x7.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x8.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x9.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x10.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x11.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x12.jpg">
+                    </div>
+                    <div class="center-item-t">
+                        <img class="img" src="../resource/img/x13.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="center-item5">
+                    <div style="width:30px;height: 30px;margin-top:20px;float: left">
+                        <img src="../resource/img/c-5.png">
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;float: left">
+                        <p style="font-size: 20px;color:rgb(0,139,221);margin-top: 5px ">汽车装饰</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:250px;float: left">
+                        <p style="margin-top: 5px">爆款推荐</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:30px;float: left">
+                        <p style="margin-top: 5px">精品女装</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:30px;float: left">
+                        <p style="margin-top: 5px">精品男装</p>
+                    </div>
+                </div>
+                <div class="center-item6">
+                    <div style="width: 320px;height: 510px;margin-left: 10px;margin-top: 10px;float: left;">
+                        <img src="../resource/img/c1.jpg" >
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/c2.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/c3.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/c4.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/c5.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/c6.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/c7.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-item7">
+            </div>
+            <div>
+                <div class="center-item8">
+                    <div style="width:30px;height: 30px;margin-top:20px;float: left">
+                        <img src="../resource/img/hotal.png">
+                    </div>
+                    <div style="width: 100px;height: 35px;margin-top: 15px;float: left">
+                        <p style="font-size: 20px;color:rgb(0,139,221);margin-top: 10px;margin-left: 10px ">精品酒店</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:250px;float: left">
+                        <p style="margin-top: 5px">爆款推荐</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:30px;float: left">
+                        <p style="margin-top: 5px">精品女装</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:30px;float: left">
+                        <p style="margin-top: 5px">精品男装</p>
+                    </div>
+                </div>
+                <div class="center-item9">
+                    <div style="width: 320px;height: 510px;margin-left: 10px;margin-top: 10px;float: left;">
+                        <img src="../resource/img/p1.jpg">
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/p2.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/p6.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/p4.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/p5.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/p6.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/p7.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                </div>
+            </div>
+            <div class="center-item10">
+            </div>
+            <div>
+                <div class="center-item11">
+                    <div style="width:30px;height: 30px;margin-top:20px;float: left">
+                        <img src="../resource/img/nanzhuang.png">
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;float: left">
+                        <p style="font-size: 20px;color:rgb(0,139,221);margin-top: 10px;margin-left: 20px ">男装</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:250px;float: left">
+                        <p style="margin-top: 5px">爆款推荐</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:30px;float: left">
+                        <p style="margin-top: 5px">精品女装</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:30px;float: left">
+                        <p style="margin-top: 5px">精品男装</p>
+                    </div>
+                </div>
+                <div class="center-item12">
+                    <div style="width: 320px;height: 510px;margin-left: 10px;margin-top: 10px;float: left;">
+                        <img src="../resource/img/n1.jpg">
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/n2.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/n3.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/n4.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/n5.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/n6.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/n7.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-item13">
+
+            </div>
+            <div>
+                <div class="center-item14">
+                    <div style="width:30px;height: 30px;margin-top:20px;float: left">
+                        <img src="../resource/img/build.png">
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;float: left">
+                        <p style="font-size: 20px;color:rgb(0,139,221);margin-top: 10px;margin-left: 20px ">建材</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:250px;float: left">
+                        <p style="margin-top: 5px">爆款推荐</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:30px;float: left">
+                        <p style="margin-top: 5px">精品女装</p>
+                    </div>
+                    <div style="width: 80px;height: 35px;margin-top: 15px;margin-left:30px;float: left">
+                        <p style="margin-top: 5px">精品男装</p>
+                    </div>
+                </div>
+                <div class="center-item15">
+                    <div style="width: 320px;height: 510px;margin-left: 10px;margin-top: 10px;float: left;">
+                        <img src="../resource/img/j1.jpg">
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/j2.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/j3.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/j4.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/j5.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/j6.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                    <div class="center-item-a">
+                        <img src="../resource/img/j7.jpg">
+                        <span><img src="../resource/img/c-1.png" ></span>
+                        <span>李杰</span>
+                        <br>
+                        <span><img src="../resource/img/shouji.png" ></span>
+                        <span>18855577420</span>
+                        <br>
+                        <span><img src="../resource/img/c-2.png"></span>
+                        <span>浙江省台州市温岭市人民西路281号</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-item16">
+
+            </div>
+            <div class="center-item17">
+                <div style="margin-left: 190px" class="item-pp">
+                    <img src="../resource/img/botton.png">
+                </div>
+                <div class="item-tt">
+                    <p style="font-size: 20px">正品保障</p>
+                </div>
+                <div class="item-pp">
+                    <img src="../resource/img/botton1.png">
+                </div>
+                <div class="item-tt">
+                    <p style="font-size: 20px">全程追踪</p>
+                </div>
+                <div class="item-pp">
+                    <img src="../resource/img/botton2.png">
+                </div>
+                <div class="item-tt">
+                    <p style="font-size: 20px">客户监督</p>
+                </div>
+                <div class="item-pp">
+                    <img src="../resource/img/botton3.png">
+                </div>
+                <div class="item-tt">
+                    <p style="font-size: 20px">售后无忧</p>
+                </div>
+                <div class="item-pp">
+                    <img src="../resource/img/botton4.png">
+                </div>
+                <div class="item-tt">
+                    <p style="font-size: 20px">准时送达</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <div class="footer-item1">
+                    <img src="../resource/img/xia.png">
+                </div>
+                <div class="footer-item2">
+                    <img src="../resource/img/two1.png">
+                    <span style="margin-left: 20px"><img src="../resource/img/twovx.png"></span>
+                    <span>官方微信</span>
+                </div>
+                <div class="footer-item2">
+                    <img src="../resource/img/two2.png">
+                    <span style="margin-left: 20px"><img src="../resource/img/sss.png"></span>
+                    <span>APP下载</span></div>
+                <div class="footer-item3">
+                    <p style="font-size: 20px">关于易和</p>
+                    <p class="item-cc">新用户注册</p>
+                    <p class="item-cc">在线下单</p>
+                    <p class="item-cc">支付方式</p>
+                </div>
+                <div class="footer-item3">
+                    <p style="font-size: 20px">配送说明</p>
+                    <p class="item-cc">运费说明</p>
+                    <p class="item-cc">配送方式</p>
+                    <p class="item-cc">发票说明</p>
+                </div>
+                <div class="footer-item3">
+                    <p style="font-size: 20px">售后服务</p>
+                    <p class="item-cc">退换货规则</p>
+                    <p class="item-cc">服务保障承诺</p>
+                    <p class="item-cc">验货与签收</p>
+                </div>
+                <div class="footer-item3">
+                    <p style="font-size: 20px">加盟易和</p>
+                    <p class="item-cc">加盟条款</p>
+                    <p class="item-cc">公司简介</p>
+                    <p class="item-cc">服务协议</p>
+                </div>
+            </div>
+            <div class="footer2">
+                <p>版权所有&copy;2016易和生活港&nbsp;&nbsp;&nbsp;保留所有版权&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;沪ICP备12032163</p>
+                <a href="">易和生活&nbsp;&nbsp;&nbsp;纵享品质</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var items = document.getElementsByClassName("header-itemq");
+    var inners = document.getElementsByClassName("serach");
+    var search = document.getElementsByClassName("serach-item-a");
+    var aaa= document.getElementsByClassName("center-item1")[0];
+    setInterval(function () {
+
+        var left = aaa.style.left;
+        console.log(left)
+        left = left.substring(left.length-2,-1);
+
+        if(left == -4800){
+            aaa.style.transition ="none";
+            aaa.style.left =0;
+            setTimeout(function () {
+                aaa.style.transition = "all 1s";
+                aaa.style.left = "-1600px";
+            },20);
+        }else{
+            left -= 1600;
+            left += "px";
+            aaa.style.left = left;
+        }
+    },2000);
+
+
+
+    for(var i = 0; i<items.length;i++){
+        function a(index) {
+            items[index].onmouseenter= function () {
+                console.log(index);
+                inners[index].style.display = "block";
+            };
+            items[index].onmouseleave = function () {
+                console.log(index);
+                inners[index].style.display = "none";
+            }
+        };
+        a(i);
+    }
+    for(var i = 0; i<items.length;i++){
+        function a(index) {
+            inners[index].onmouseenter = function () {
+                console.log(index);
+                search[index].style.display = "block";
+            };
+            inners[index].onmouseleave = function () {
+                console.log(index);
+                search[index].style.display = "none";
+            }
+        };
+        a(i);
+    }
+</script>
+</html>
